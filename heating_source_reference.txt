@@ -1,0 +1,577 @@
+
+molecule gas & SFR
+
+Kennicutt et al. 2012
+Star Formation in the Milky Way and Nearby Galaxies
+
+\subsection{ISM Basics} \label{ismintro}
+
+The interstellar medium (ISM) is a complex environment encompassing
+a very wide range of properties (e.g., \citealt{1977ApJ...218..148M,
+2005ARA&A..43..337C}).
+%McKee and Ostriker 1977, Cox, 2005
+In the Milky Way, about half the volume
+is filled by a hot ionized medium (HIM) with $n < 0.01$ \cmv\ and $\tk >
+\eten5$ K, and half is filled by
+some combination of warm ionized medium (WIM) and warm neutral medium (WNM),
+with $n \sim 0.1 - 1$ \cmv\ and $\tk$ of several thousand K
+\citep{2005ARA&A..43..337C}.
+The neutral gas is subject to a thermal instability that predicts
+segregation into the warm neutral and cold neutral media (CNM),
+the latter with $n > 10$ \cmv\ and $\tk < 100$ K
+\citep{1969ApJ...155L.149F}.
+%Field, Goldsmith, and Habing, 1969
+The existence of the CNM is clearly revealed by emission in the hyperfine
+transition of \hi, with median temperature about 70 K, determined by
+comparison of emission to absorption spectra
+\citep{2003ApJ...586.1067H}.
+% Heiles and Troland Millenium Arecibo Survey
+However, the strict segregation into cold and warm stable phases
+is not supported by observations suggesting that
+about 48\% of the WNM may lie in the thermally unstable phase
+\citep{2003ApJ...586.1067H}.
+% Heiles and Troland Millenium Arecibo Survey
+Finally, the molecular clouds represent the coldest ($\tk \sim 10$ K
+in the absence of star formation),
+densest ($n > 30$ \cmv) part of the
+ISM.  We focus on the cold ($\tk < 100$ K) phases here, as they are
+the only plausible sites of star formation. The warmer phases
+provide the raw material for the cold phases, perhaps through
+``cold" flows from the intergalactic medium \citep{2006MNRAS.368....2D}.
+% Dekel and Birnboim
+In the language of this review, such flows would be ``warm."
+
+\subsection{Introduction}\label{introduction}
+
+Star formation encompasses the origins of
+stars and planetary systems, but it is also
+a principal agent of galaxy formation and evolution, and
+hence a subject at the roots of astrophysics on its largest
+scales.
+
+The past decade has witnessed an unprecedented
+stream of new observational information on star formation
+on all scales, thanks in no small part to
+%the impact of
+new facilities such as the Galaxy Evolution Explorer (GALEX),
+the Spitzer Space Telescope, the Herschel Space Observatory,
+the introduction of powerful new instruments on the
+Hubble Space Telescope (HST), and a host of groundbased
+optical, infrared, submillimeter, and radio telescopes.
+These new observations are providing a detailed reconstruction
+of the key evolutionary phases and physical processes
+that lead to the formation of individual stars in
+interstellar clouds, while at the same time extending the
+reach of integrated measurements of star formation rates
+(SFRs) to the most distant galaxies known.  The new data
+have also stimulated a parallel renaissance in theoretical
+investigation and numerical modelling of the star formation
+process, on scales ranging from individual protostellar
+and protoplanetary systems to the scales of molecular
+clouds and star clusters, entire galaxies and ensembles
+of galaxies, even to the first objects, which are thought
+to have reionized the Universe and seeded today's stellar
+populations and Hubble sequence of galaxies.
+
+This immense expansion of the subject, both in terms of
+the volume of results and the range of physical scales explored,
+may help to explain one of its idiosyncracies, namely the
+relative isolation between the community studying individual
+star-forming regions and stars in the Milky Way (usually abbreviated
+hereafter as \mw, but sometimes referred to as ``the Galaxy"), and the largely
+extragalactic community that attempts to characterise the star formation
+process on galactic and cosmological scales.  Some aspects
+of this separation have been understandable.  The key
+physical processes that determine how molecular clouds
+contract and fragment into clumps and cores and finally
+clusters and individual
+stars can be probed up close only in the Galaxy, and much
+of the progress in this subject has come from in-depth case
+studies of individual star-forming regions.  Such detailed
+observations have been impossible to obtain for even relatively
+nearby galaxies.  Instead the extragalactic branch of the
+subject has focused on the collective effects of star formation,
+integrated over entire star-forming regions, or often
+over entire galaxies.  It is this collective conversion of
+baryons from interstellar gas to stars and the emergent
+radiation and mechanical energy from the stellar populations that
+is most relevant to the formation and evolution of galaxies.
+As a result, much of our empirical knowledge of star
+formation on these scales consists of scaling laws and
+other parametric descriptions, in place of a rigorous,
+physically-based characterization.  Improving our knowledge
+of large-scale star formation and its attendant feedback
+processes is essential to understanding the
+birth and evolution of galaxies.
+
+Over the past several years, it has become increasingly
+clear that many of the key processes influencing star
+formation on all of these scales lie at the interface
+between the scales within individual molecular clouds
+and those of galactic disks.
+It is now clear that the large scale SFR is determined
+by a hierarchy of physical processes spanning a
+vast range of physical scales: the accretion of gas
+onto disks from satellite objects and the intergalactic medium
+(Mpc); the cooling of this gas to form a cool neutral phase (kpc);
+the formation of molecular clouds ($\sim 10- 100$ pc);
+the fragmentation and accretion of this molecular gas to form
+progressively denser structures such as clumps ($\sim 1$ pc) and
+cores ($\sim 0.1$ pc); and the subsequent
+contraction of the cores to form stars (\rsun) and planets ($\sim$ AU).
+% NJE put in scales re GB 2 comment; Rob should check
+% NJE also left out "formation of bound clouds", not clear where it belongs
+The first and last of these processes operate on
+%in distinctly
+galactic (or extragalactic) and local cloud scales,
+respectively, but the others occur at the boundaries
+between these scales, and the
+coupling between processes is not yet well understood.
+Indeed it is possible that different physical processes
+%serve as
+provide the ``critical path" to star formation in different
+interstellar and galactic environments.  Whatever the
+answer to these challenging questions, however, Nature
+is strongly signalling that we need a unified approach to understanding
+star formation, one which incorporates observational and
+astrophysical constraints on star formation efficiencies,
+mass functions, etc. from small-scale studies along
+with a much deeper understanding of the processes that
+trigger and regulate the formation of star-forming clouds
+on galactic scales, which, in turn, set the boundary conditions for
+star formation within clouds.
+
+This review makes a modest attempt to present a consolidated
+view of large-scale star formation, one which incorporates
+our new understanding of the star formation within clouds
+and the ensemble properties of star formation in our own
+\mw\ into our more limited but broader understanding
+of star formation in external galaxies.  As will become
+clear, the subject itself is growing and transforming rapidly,
+so our goal is to present a progress report in what remains
+an exciting but relatively immature field.  Nevertheless
+a number of factors make this a timely occasion for such a
+review.  The advent of powerful multi-wavelength observations
+has transformed this subject in fundamental ways since the
+last large observational review of the galaxy-scale aspects
+\citep{1998ARA&A..36..189K},
+%Kennicutt 1998a ARAA
+hereafter denoted K98.
+Reviews have covered
+various observational aspects of star formation within the \mw\
+(\citealt{1999ARA&A..37..311E, 2007ARA&A..45..339B, 2007ARA&A..45..481Z}),
+% Evans et al. , Bergin and Tafalla, Zinnecke and Yorke
+but the most comprehensive reviews have been theoretically based
+(\citealt{1987ARA&A..25...23S, 2007ARA&A..45..565M}).
+% Shu et al., McKee-Ostriker,
+We will take an observational perspective, with emphasis on
+the interface between local and galactic scales.
+We focus on nearby galaxies and the \mw, bringing in results from
+more distant galaxies only as they bear on the issues under discussion.
+
+
+
+================================================
+heating mechanisms:
+Y. Ao et al. 2013
+The thermal state of molecular clouds in the Galactic center: evidence for non-photon-driven heating
+
+What heats the dense gas to high temperatures in the GC?  The four most 
+common mechanisms for heating the gas in molecular clouds are (a) photo-electric 
+heating in photon-dominated regions (PDRs), (b) X-ray heating (XDRs), 
+(c) cosmic-ray heating (CRDRs), and (d) turbulent heating. In star-forming 
+regions, gas can be heated by electrons released from normal dust grains or polycyclic 
+aromatic hydrocarbons (PAHs).  Gas and dust are thermally coupled in very dense regions
+($n_{\rm H_2}$$>$10$^5$\,cm$^{-3}$; e.g., Kr{\"u}gel \& Walmsley 1984).
+However, the gas temperatures derived from H$_2$CO are much higher than the
+fairly uniform dust temperatures of $\sim$ 14$-$20~K in the dense clouds of the GC
+(Pierce-Price \etal\,2000; Garc{\'{\i}}a-Mar{\'{\i}}n et al. 2011; Molinari et
+al. 2011). Photons can drive such decoupling only at the very surface of
+irradiated clouds ($\sim$ a few percent of their total molecular gas mass; see
+Bradford et al. 2003 and references therein). Only there might they have a
+chance to dissociate complex molecules, such as H$_2$CO, which then necessarily
+probe much deeper and UV-shielded gas regions where photo-electric heating of
+the gas is no longer dominant.  Therefore, some other 
+process(es) should exist that are efficient at directly heating the gas from outside.  X-ray
+heating (Maloney \etal\,1996), cosmic-ray heating (G{\"u}sten \etal\,1981,
+1985; Papadopoulos 2010), and turbulent heating (G{\"u}sten \etal\,1985; 
+Schulz \etal\,2001; Pan \& Padoan 2009) are such potential heating mechanisms.
+
+A few other heating processes also deserve to be mentioned. 
+Gravitational heating (Goldsmith \& Langer 1978; Tielens 2005) is important 
+during the collapse phase of molecular cloud cores. However, gravitational 
+collapse is a temporary phase and star-forming activity, with the notable 
+exception of Sgr\,B2 (not covered by our survey), is not vigorous in 
+the clouds of the CMZ. Heating of the gas by magnetic ion-neutral slip 
+(Scalo 1977; Goldsmith \& Langer 1978) would require further observations 
+of the ionization fraction and the magnetic fields of the molecular clouds
+(see, e.g., Ferri{\'e}re 2009; Croker et al. 2010), which is outside 
+the scope of this paper. In a highly turbulent environment, the effect of a 
+magnetic field on the cloud is to decrease the dissipation of kinetic 
+energy, i.e., turbulent heating, and to lead to a lower gas kinetic temperature. 
+Having already mentioned PDRs, we discuss in the following XDRs, CRDRs,
+and the dissipation of turbulence.
+
+\subsubsection{X-ray heating}\label{dis_xray}
+
+In X-ray dominated regions (XDRs), X-rays photoionize atoms and molecules,
+depositing a significant fraction of the primary and secondary electron energy
+in heat (Maloney \etal\ 1996; Hollenbach \& Tielens 1999). Unlike UV photons,
+hard X-ray photons are capable of deeply penetrating dense molecular
+clouds and heating large amounts of gas. The X-ray heating rate is given by
+\begin{eqnarray}
+%\Gamma_{\rm X}=1.2\times10^{-18}\,C_{\alpha}\,(\frac{n}{10^5\,{\rm cm^{-3}}})\,(\frac{f_h}{0.3})\,
+%(\frac{F_{\rm X}}{\rm erg\,cm^{-2}\,s^{-1}})\,(\frac{N}{10^{22}\,{\rm cm^{-2}}})^{0.9}
+%{\rm erg\,cm^{-3}\,s^{-1}}
+\Gamma_{\rm X}=1.2\times10^{-19}\,(\frac{n}{10^5\,{\rm cm^{-3}}})\,
+(\frac{F_{\rm X}}{\rm erg\,cm^{-2}\,s^{-1}}) \nonumber\\ 
+(\frac{N}{10^{22}\,{\rm cm^{-2}}})^{-0.9}\,
+{\rm erg\,cm^{-3}\,s^{-1}}
+\end{eqnarray}
+(Maloney et al. 1996), where $n$ is gas density in units of cm$^{-3}$, $F_{\rm
+X}$ is X-ray flux density in units of ${\rm erg\,cm^{-2}\,s^{-1}}$, and $N$
+the column density of hydrogen attenuating the X-ray flux. For the dense cores
+studied here, $N$ is of the order of $10^{23}\,{\rm cm^{-2}}$. In the region
+associated with the Galactic center and encompassing a diameter of about 20
+arcminutes, the total X-ray luminosity in the range 2 to 40 KeV (Muno
+\etal\,2004; Koyama \etal\,2007; Yuasa \etal\,2008; Dogiel \etal\,2010) is
+6$\times$10$^{36}$ ${\rm erg\,s^{-1}}$, yielding an X-ray flux density of
+2.0$\times$10$^{-3}$ ${\rm erg\,cm^{-2}\,s^{-1}}$.
+
+The gas cooling via gas-dust interaction can be expressed as 
+\begin{equation} 
+\Lambda_{\rm g-d}\,\sim\,4\times10^{-33}\,n^2\,T_{\rm
+kin}^{1/2}(T_{\rm kin}-T_{\rm d})\,{\rm erg~cm^{-3}~s^{-1}}
+\end{equation}
+(Tielens 2005), where $T_{\rm kin}$ is the gas kinetic temperature and $T_{\rm
+d}$ dust temperature. For a gas density range of 10$^4$ to
+10$^6$\,cm$^{-3}$, accounting for the velocity gradient,
+${\rm d}v/{\rm d}r$, the line cooling is approximated well by the
+expression
+\begin{equation} 
+\Lambda_{\rm gas}\,\sim\,6\times10^{-29}\,n^{1/2}\,T_{\rm kin}^3\,{\rm d}v/{\rm
+d}r\,{\rm erg~cm^{-3}~s^{-1}} 
+\end{equation}
+(Goldsmith \& Langer 1978; Goldsmith 2001; Papadopoulos 2010), where ${\rm
+d}v/{\rm d}r$ is the velocity gradient adopted to
+calculate the line cooling rate in the LVG radiative transfer models. 
+The line cooling is through rotational lines of CO, its isotopologues $^{13}$CO
+and C$^{18}$O, and other species (Goldsmith 2001). If the water is highly
+abundant in the warm clouds of the CMZ, the line cooling from the water
+emission will be important, and this will lead to lower gas kinetic temperatures
+in this section. However, this will not drastically change our results,
+because water is unlikely to be that dominant. Furthermore, water vapor only
+affects the cooling rate and not the heating process, so that our evaluation of
+relative efficiencies of different heating processes is not seriously
+affected.
+
+If X-ray heating dominates the heating process, the gas kinetic temperature 
+can be estimated from the thermal equilibrium
+\begin{equation}
+{\bar\Gamma_{\rm X}}=\Lambda_{\rm g-d}+\Lambda_{\rm gas}\,.
+\end{equation}
+To simply solve the equation above, we set the dust temperature to $T_{\rm d}$=0\,K,
+yielding a minimum $T_{\rm kin}$ value and its simple analytic solution as below
+\begin{eqnarray} 
+T_{\rm kin}=(\frac{(16\times10^{-8}\,n^3+720\,n^{0.5}\,{\rm d}v/{\rm d}r\,
+F_{\rm X}\,(N/10^{23})^{-0.9})^{0.5}}{12\,{\rm d}v/{\rm d}r}\nonumber\\
+-\frac{4\times10^{-4}\,n^{1.5}}{12\,{\rm d}v/{\rm d}r})^{2/3}\,.
+\end{eqnarray}
+Choosing a velocity gradient of 5\,\kms\,pc$^{-1}$, and adopting the observed
+X-ray flux density of 2.0$\times$10$^{-3}$ ${\rm erg\,cm^{-2}\,s^{-1}}$, the
+derived gas kinetic temperature is only 1\,K. It indicates that the observed X-ray
+flux density cannot explain the high gas temperatures observed by formaldehyde.
+Peculiar conditions in the CMZ, like a potentially high water vapor
+abundance, enhancing cooling, or a high magnetic field inhibiting the dissipation
+of turbulent motion, would not help to diminish the resulting discrepancy.
+
+To simplify this: If the X-ray flux density were about 500 times higher than 
+the observed value and line cooling dominates the cooling process, we could
+derive an approximate gas temperature with
+\begin{eqnarray}
+T_{\rm kin}=45\,(\frac{n}{10^{4.5}\,{\rm cm}^{-3}})^{1/6}\,(\frac{{\rm d}v/{\rm
+d}r}{5\,\kms\,{\rm pc}^{-1}})^{-1/3} \nonumber\\
+(\frac{F_{\rm X}}{500\times2.0\times10^{-3}\,
+{\rm erg\,cm^{-2}\,s^{-1}}})^{1/3}\,(\frac{N}{10^{23}\,{\rm cm^{-2}}})^{-0.3}\,{\rm K}\,.
+\end{eqnarray}
+This equation shows that $T_{\rm kin}$ depends weakly on the gas density, velocity
+gradient, column density of hydrogen attenuating the X-ray emission, and X-ray
+flux density. The first three parameters cannot change significantly. If
+X-rays really play an important role in heating the gas, an X-ray flux density,
+about three orders of magnitude higher than observed, is required. Such an
+intense X-ray radiation field may exist in some spatially confined regions.
+However, it cannot explain the high gas temperatures on the large spatial
+scales of the GC. Recent observations (e.g., Eckart et al. 2012; Nowak et
+al. 2012) confirm that the X-ray emission from Sgr~A$^*$ shows flares, almost
+daily, by factors of a few to ten times over the quiescent emission level, and
+rarely even up to more than 100 times that level on time scales from a few
+minutes to a few hours. However, this is still much less than what is required
+to explain our observed kinetic gas temperatures.
+
+\subsubsection{Cosmic-ray heating}\label{dis_cr}
+
+For the UV-shielded and mostly subsonic dense gas cores (e.g., dark clouds),
+cosmic-ray heating is the major heating process, and it may also play an
+important role in heating the gas in the GC because the cosmic-ray flux density
+is enhanced by the supernovae in this region. The cosmic-ray heating rate is
+given by 
+\begin{equation} 
+\Gamma_{\rm CR}\,\sim\,3.2\times10^{-28}\,n\,(\frac{\zeta_{\rm
+CR}}{10^{-17}\,s^{-1}})\,{\rm erg~cm^{-3}~s^{-1}} 
+\end{equation} 
+(Goldsmith \& Langer 1978), where $\zeta_{\rm CR}$ is the total
+cosmic-ray ionization rate. If the gas heating in the GC is dominated by the
+cosmic-ray heating, we can obtain the gas kinetic temperature from the energy
+balance equation 
+\begin{equation} 
+\Gamma_{\rm CR}=\Lambda_{\rm g-d}+\Lambda_{\rm gas}\,.
+\end{equation} 
+As above in $\S$~\ref{dis_xray}, we set the dust temperature to $T_{\rm d}$=0\,K,
+yielding a minimum $T_{\rm kin}$ value and the following analytic solution as below
+\begin{eqnarray} 
+T_{\rm kin}=(\frac{(16\times10^{-8}\,n^3+768\,n^{0.5}\,{\rm d}v/{\rm
+d}r\,\frac{\zeta_{\rm CR}}{10^{-17}\,s^{-1}})^{0.5}}{12\,{\rm
+d}v/{\rm d}r}\nonumber\\
+-\frac{4\times10^{-4}\,n^{1.5}}{12\,{\rm
+d}v/{\rm d}r})^{2/3}\,.
+\end{eqnarray}
+
+Similarly, we can obtain a simple solution as below if line cooling dominates
+the cooling process
+\begin{eqnarray} 
+T_{\rm kin}=6\,(\frac{n}{10^{4.5}\,{\rm cm}^{-3}})^{1/6}\,(\frac{{\rm d}v/{\rm
+d}r}{5\,\kms\,{\rm pc}^{-1}})^{-1/3} \nonumber\\(\frac{\zeta_{\rm CR}}{10^{-17}\,{\rm
+s}^{-1}})^{1/3}\,{\rm K}\,.
+\end{eqnarray}
+If cosmic-rays are the only heating source, gas temperatures are constrained by
+three parameters: gas density, velocity gradient, and the cosmic-ray ionization
+rate. It is reasonable to adopt a gas density of 10$^{4.5}$ cm$^{-3}$ (still low
+enough to yield (almost) optically thin H$_2$CO 3$_{03}\rightarrow2_{02}$
+emission) and a velocity gradient of 5\,\kmspc\, for the clouds in the GC. The
+poorly determined parameter is the comic-ray ionization rate. Using the assumed
+parameters, the gas kinetic temperatures from Equation~(14) are 22, 54, 70, and
+122\,K for cosmic-ray ionization rates of 10$^{-15}$, 10$^{-14}$,
+2$\times$10$^{-14}$, and 10$^{-13}$\,s$^{-1}$. Thus, if cosmic rays play an
+important role in heating the gas, a cosmic-ray ionization rate of at least
+1$-$2$\times$10$^{-14}$\,s$^{-1}$ is required to explain the observed
+temperatures in the GC, which is about three orders of magnitude higher than in
+the solar neighborhood (e.g., Farquhar et al. 1994). Such an enhanced flux of
+cosmic-ray electrons is inferred in Sgr\,B2 by Yusef-Zadeh \etal\,(2007), and
+is interpreted as the main molecular-gas heating source in this region.
+The required high cosmic ray flux of 1$-$2$\times$10$^{-14}$\,s$^{-1}$
+would lead to an H{\sc i} density of about 500~cm$^{-3}$ (G{\"u}sten et al. 1981).
+Such a large H{\sc i} abundance will cause noticeable 21 cm signals, which have
+indeed been seen in H{\sc i} absorption surveys toward some GC clouds (e.g.,
+Schwarz et al.  1977; Lang et al. 2010).  For comparison, Bradford \etal\,
+(2003) estimate that a high supernova rate in the nucleus of NGC\,253 results
+in a cosmic-ray ionization rate of 1.5$-$5.3$\times$10$^{-14}$\,s$^{-1}$.  This
+mechanism may also play an important role in regulating the gas in
+ultraluminous infrared galaxies (ULIRGs) where the cosmic ray energy density
+may be as high as 1000 times that of the local Galactic value or even
+higher (Papadopoulos 2010; Papadopoulos \etal\,2011). 
+
+
+\subsubsection{Turbulent heating}\label{dis_turb}
+The dissipation of turbulent kinetic energy provides a potentially important
+heating source in Galactic astrophysical environments, such as interstellar
+clouds (e.g., Falgarone \& Puget 1995) and the warm ionized medium (e.g.,
+Minter \& Balser 1997), and in extragalactic environments, such as
+intracluster cooling flows (Dennis \& Chandran 2005).
+The observed large velocity dispersion in the GC requires energy input to
+support the turbulence because the dynamic timescale is rather short, around
+10$^6$ years. This implies a high turbulent heating rate.  Following Pan \&
+Padoan (2009), the turbulent heating rate is given by
+\begin{equation}
+\Gamma_{\rm turb}=n\,\mu\,m_{\rm H}\bar\epsilon\,,
+\end{equation}
+where $n$ and $m_{\rm H}$ are the number density and the mass of the hydrogen
+atom, $\mu$ is the mean molecular weight, $\mu$=2.35 for molecular clouds, and
+$\bar\epsilon$ is the average dissipation rate per unit mass.  The average
+dissipation rate per unit mass, is given by
+\begin{equation}
+\bar\epsilon=0.5\,\sigma_{\rm v}^3/L\,,
+\end{equation}
+where $\sigma_{\rm v}$ is the one-dimensional velocity dispersion and $L$
+the size of the cloud. Replacing the expression for $\bar\epsilon$ in
+equation~(16) and substituting units, the average turbulent heating rate is
+\begin{equation} 
+{\bar\Gamma_{\rm turb}}=3.3\times10^{-27}\,n\,\sigma_{\rm v}^3\,L^{-1}\,{\rm
+erg~cm^{-3}~s^{-1}}\,,
+\end{equation}
+where the gas density $n$ is in units of cm$^{-3}$, the one-dimensional
+velocity dispersion $\sigma_{\rm v}$ is in units of \kms, and the cloud size
+$L$ is in units of pc. We can relate the one-dimensional velocity dispersion
+and the observed FWHM line widths by the conversion $\sigma_{\rm v}$=$V_{\rm
+FWHM}$/2.355 (Pan \& Padoan 2009). 
+
+If turbulent heating dominates the heating process, the gas kinetic temperature
+can be estimated from thermal equilibrium
+\begin{equation}
+{\bar\Gamma_{\rm turb}}=\Lambda_{\rm g-d}+\Lambda_{\rm gas}\,.
+\end{equation}
+To solve the equation above simply, we set the dust temperature to $T_{\rm d}$=0\,K,
+yielding a minimum $T_{\rm kin}$ value and its simple analytic solution as
+\begin{eqnarray} 
+T_{\rm kin}=(\frac{(16\times10^{-8}\,n^3+7920\,n^{0.5}\,{\rm d}v/{\rm d}r\,\sigma_{\rm
+v}^3\,L^{-1})^{0.5}}{12\,{\rm d}v/{\rm d}r}\nonumber\\
+-\frac{4\times10^{-4}\,n^{1.5}}{12\,{\rm d}v/{\rm d}r})^{2/3}\,.
+\end{eqnarray}\label{tkin_cal}
+Choosing a velocity gradient of 5\,\kms\,pc$^{-1}$, an observed FWHM line
+width of 20\kms, and a cloud size of 5\,pc, the derived gas kinetic temperature
+ranges between 51 and 62\,K for a range in gas density of 10$^{4}$ to
+10$^{5}$\,cm$^{-3}$.
+
+For gas densities $n$\,$\leq$\,10$^{5}$\,cm$^{-3}$ and the assumed parameters as
+above, line cooling dominates the cooling process and the solution can be
+simplified to
+\begin{eqnarray} 
+T_{\rm kin}=62\,(\frac{n}{10^{4.5}\,{\rm cm}^{-3}})^{1/6}\,(\frac{L}{5\,{\rm
+pc}}\,\frac{{\rm d}v/{\rm d}r}{5\,\kms\,{\rm pc}^{-1}})^{-1/3} \nonumber\\(\frac{V_{\rm
+FWHM}}{20\,\kms})\,{\rm K}\,.
+\end{eqnarray} 
+This equation underestimates the gas temperature by less than 10\% in
+comparison with Equation~(20), and shows that the temperature depends only weakly
+on the gas density, cloud size, and velocity gradient, but strongly
+depends on line width. Considering the line widths in different clouds, we
+can use Equation~(20) to calculate the temperatures and present the results in
+the last column of Table~\ref{table2}. To compare the calculated temperatures
+by turbulent heating with the ones derived from the H$_2$CO measurements in
+$\S$~\ref{dis_lvg}, we plot both temperatures in Fig.~\ref{tkin}. In general,
+the temperatures agree within the uncertainties, supporting turbulent heating
+as a good candidate to heat the gas to the high temperatures observed in the
+GC. High gas kinetic temperatures were also deduced from NH$_3$ absorption
+lines toward Sgr B2 by Wilson et al. (1982). They suggested that the high gas
+temperatures were caused by turbulence maintained by shearing forces as a
+consequence of galactic rotation.
+ 
+For turbulent and cosmic-ray heating, we cannot distinguish which
+mechanism dominates the heating of molecular clouds in the GC. 
+With a large interferometer such as ALMA, one can try to search for molecular
+clumps with thermal line widths, i.e. with line widths that are dominated by
+thermal motion. If such objects can be found, turbulent heating can be excluded
+because the narrow line widths cannot be explained by turbulent heating, and the
+cosmic-ray heating will then be the dominant process to heat the gas to high
+temperatures. Future observations of $x(e)\,=\,\frac{n_e}{2n_{H_2}}$ (the
+average ionization fraction) can also help distinguish between these two
+heating mechanisms, because high cosmic-ray energy densities will boost this fraction,
+unlike turbulence (Papadopoulos 2010 and references therein). 
+
+The special thermal state of the GC clouds may be the average state of the
+molecular ISM in ULIRGs, with a direct impact on their stellar IMF
+(Papadopoulos et al. 2011). The high temperatures of molecular clouds on
+large scales in the GC region may be driven by turbulent energy dissipation and/or
+cosmic-rays instead of photons. Such a non-photon-driven thermal state of the
+molecular gas provides an excellent template for studying the intial conditions
+and star formation for the galaxy-sized gas in ULIRGs.
+
+=============
+
+A. Ginsburg et al. 2016
+Dense gas in the Galactic central molecular zone is warm
+and heated by turbulence?
+
+The central region of our Galaxy, the central molecular zone (CMZ), is the
+nearest location in which we can study star formation in an extreme
+environment with pressure, turbulent Mach number, and gas temperature much
+higher than in local star-forming regions \citep{Morris1996a}.  While there
+have been great leaps in our understanding of star formation in local
+molecular clouds in the past decade, there remain many unanswered questions
+about how star formation changes as gas becomes denser, more opaque, and more
+turbulent, as it most likely was in galaxies at the peak of cosmic star
+formation \citep{Kruijssen2013a}.
+
+
+The Galactic CMZ has attracted a great deal of attention recently because it
+has a much higher ratio of dense gas mass to star formation tracers than the
+rest of the galaxy
+\citep{Longmore2013a,Longmore2012b,Longmore2013b,Kruijssen2014c,Yusef-Zadeh2009a,Immer2012a}.
+The star formation rate in this region therefore appears to be suppressed
+relative to the expectations from nearby star-forming regions and nearby galaxy
+disks, where the star formation timescale decreases with increasing gas
+surface density
+\citep{Kennicutt1998a, Kennicutt2012a, Leroy2013a, Heiderman2010a}.  Within the
+CMZ, the central $\sim100$ pc\footnote{Assuming the IAU-recommended $d=8.5$ kpc
+\citep{Ghez2008a, Gillessen2009b, Reid2009a, Gillessen2013b}.} ``ring'' including
+the  dust ridge \citep{Lis1991a, Sofue1995a, Molinari2011a} contains most of
+the dense gas.  \citet{Longmore2013a} recently proposed that the clouds along
+the ``ring'' \citep[which is more accurately described as a
+stream;][]{Kruijssen2015a} represent a time-ordered path from starless to
+star-forming clouds, from ``The Brick'' (G0.253+0.016, cloud a) through the
+lettered dust ridge clouds \citep[clouds b,c,d,e,f][]{Lis1999a}, ending at Sgr
+B2.  In principle, this would allow us to study the time evolution of
+protocluster clumps given an orbital model to describe their motion
+\citep{Kruijssen2015a}.
+
+The thermal properties of this gas are a crucial component for understanding
+the conditions governing both star formation and interstellar chemistry.  The
+gas temperature sets the sound speed in the gas and therefore the Mach number
+within a turbulent medium.  It also governs the thermal Jeans mass.  Regardless
+of whether turbulence or gravity controls the fragmentation scale, the gas
+temperature is clearly important.
+
+Prior gas temperature measurements in the CMZ primarily used the popular
+ammonia metastable inversion transition thermometer \citep[\ammonia (1,1) -
+(7, 7);][]{Guesten1981a, Mauersberger1986a, Huettemeister1993a, Ott2014a},
+which is
+sensitive to moderate density gas \citep[$n(\hh) \sim 10^3-10^4$
+\percc;][]{Shirley2015a}.  While this thermometer is generally reliable in cold
+regions (e.g., the (1-1)/(2-2) ratio is accurate to $T_G\lesssim40$ K), the
+population of the higher energy states \emph{may} be affected by formation
+heating, a mechanism recently discovered to affect H$_3$O+ in the CMZ and
+suggested to affect \ammonia, in which the excess energy from molecule
+formation leaves a significant fraction of the molecules in a rotationally
+excited state \citep[][]{Lis2014a}, so confirmation of the high temperatures
+seen in \ammonia \citep{Mills2013a} can be used to assess the significance of
+that mechanism.  \citet{Ao2013a} used the para-formaldehyde (\para) 218 GHz
+thermometer \citep{Mangum1993a}, which is sensitive to denser ($n\sim10^4-10^5$
+\percc) and hotter ($T_G>20$ K, usually $T_G\sim60$ K) gas, to map out the
+inner $\sim75$ pc of the CMZ and found high temperatures comparable to those
+found in previous studies.
+
+There is a long-standing problem that the observed gas and dust temperatures do
+not agree throughout the CMZ \citep{Guesten1981a, Molinari2011a, Ao2013a,
+Clark2013a, Ott2014a}.  Photon-dominated region
+(PDR) models predict that gas and dust temperatures should match at high column
+densities
+\citep{Hollenbach1999a}.  The observed discrepancy represents a significant
+problem for understanding the importance of gas temperature and pressure in the
+evolution of molecular clouds.  The dust temperature is readily estimated via
+multiband continuum mapping and therefore is often used as a proxy for the
+dense gas temperature.  While the discrepancy is not theoretically a problem,
+as the gas and dust may remain collisionally uncoupled up to moderately high
+densities given a high enough heating rate, it is an important empirical
+difference between CMZ and Galactic disk clouds.  Dust and \ammonia derived
+temperatures are usually assumed and often observed to agree in Galactic disk
+clouds \citep{Pillai2006a, Dunham2010a, Juvela2012a, Battersby2014a},  but the
+difference can no longer be ignored in the Galactic center.
+
+Within both our own Galactic center and many nearby galactic nuclei, there is
+controversy over which heating mechanisms dominate.  In the CMZ,
+\citet{Ao2013a} were able to rule out X-ray heating as an energetically
+important mechanism, leaving cosmic rays and turbulence (mechanical heating) as
+viable candidates.  Studies of the CO spectral line energy distribution (SLED)
+around Sgr A* and Sgr B2 argued for mechanical heating and UV heating,
+respectively \citep{Goicoechea2013a,Etxaluze2013a}.  Nearby infrared-luminous
+galaxies have properties that resemble these regions
+\citep{Kamenetzky2012a,Kamenetzky2014a}, but the debate about the dominant
+heating mechanism remains open in many galaxies, allowing for photon-dominated,
+X-ray-dominated, mechanical/turbulent, or cosmic ray heating
+\citep{Loenen2008a, van-der-Werf2010a, Papadopoulos2011a, Meijerink2011a,
+Bayet2011a, Mangum2013a, Papadopoulos2013a}.
+
+We have expanded the \formaldehyde mapping project of \citet{Ao2013a} to a
+$\sim5\times$ larger area, including the dust ridge and the positive-longitude
+turbulent clouds thought to be associated with the intersection point between
+the x1 and x2 orbits \citep{Rodriguez-Fernandez2006b, Riquelme2013a}.  We
+describe the new
+observations in Section \ref{sec:observations}.  In Section \ref{sec:signal},
+we describe the analysis process used to extract signal from the data cubes.
+In Section \ref{sec:analysis}, we describe how we
+derive temperatures from the line ratios.
+We discuss various implications of our data in Section
+\ref{sec:discussion}.  In the appendices, we describe further details of the
+data reduction process, include additional tables, and provide the source code
+for all aspects of this project, from data reduction through figure generation
+for the paper.
+
+ 

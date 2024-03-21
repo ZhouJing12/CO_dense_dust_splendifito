@@ -1,0 +1,15 @@
+Component 1
+30<Tkin<100
+3<log nH2<7
+0.5<Kvir<2
+size<400
+
+Component 2
+50<Tkin<1000
+2<log nH2<5
+0.5<Kvir<20
+
+Component 3
+50<Tkin<1000
+3<log nH2<7
+0.5<Kvir<20
